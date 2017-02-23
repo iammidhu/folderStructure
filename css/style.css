@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+header p {
+  text-align: center;
+  color: #ccc;
+}
+.box {
+    margin-left: 50px;
+}
+
+.main_heading {
+    text-align: center;
+    color: #31b4d5;
+    background-color: aquamarine;
+    padding: 30px;
+}
+
+footer p {
+    padding: 20px;
+    text-align: center;
+    color: #0788ff;
+    border: 1px solid #0788ff;
+}
