@@ -71,149 +71,71 @@ function init() {
     myDiagram.linkTemplate = $(go.Link);
 
     var nodeDataArray = [{
-        key: "src"
+        key: "app"
     }, {
-        key: "Content",
-        parent: "src"
+        key: "components",
+        parent: "app"
+    }, {
+        key: "main",
+        parent: "components"
+    }, {
+        key: "shared",
+        parent: "components"
+    }, {
+        key: "home",
+        parent: "main"
+    },{
+        key: "home.component.ts",
+        parent: "home"
+    }, {
+        key: "login",
+        parent: "main"
+    },{
+        key: "login.component.ts",
+        parent: "login"
+    }, {
+        key: "Quiz",
+        parent: "main"
+    },  {
+        key: "services",
+        parent: "shared"
+    }, {
+        key: "api.service.ts",
+        parent: "services"
+    }, {
+        key: "Questions",
+        parent: "Quiz"
+    },{
+        key: "questions.component.ts",
+        parent: "Questions"
+    },  {
+        key: "Result",
+        parent: "Quiz"
+    },{
+        key: "result.component.ts",
+        parent: "Result"
+    },  {
+        key: "assets",
+        parent: "app"
     }, {
         key: "css",
-        parent: "Content"
+        parent: "assets"
     }, {
         key: "style.css",
         parent: "css"
-    }, {
-        key: "fonts ....",
-        parent: "fonts"
-    }, {
-        key: "images here ....",
-        parent: "images"
-    }, {
-        key: "js here ....",
-        parent: "js"
-    }, {
-        key: "fonts",
-        parent: "Content"
-    }, {
-        key: "images",
-        parent: "Content"
-    }, {
-        key: "js",
-        parent: "Content"
-    }, {
-        key: "Scripts",
-        parent: "src"
-    }, {
-        key: "spa",
-        parent: "Scripts"
-    }, {
-        key: "afterLogin",
-        parent: "spa"
-    }, {
-        key: "components",
-        parent: "afterLogin"
-    }, {
-        key: "approval",
-        parent: "components"
-    }, {
-        key: "approvalApp.module.js",
-        parent: "approval"
-    }, {
-        key: "chat",
-        parent: "components"
-    }, {
-        key: "chatApp.module.js",
-        parent: "chat"
-    }, {
-        key: "chatComponents",
-        parent: "chat"
-    }, {
-        key: "feedback",
-        parent: "components"
-    }, {
-        key: "afterLogin.html",
-        parent: "afterLogin"
-    }, {
-        key: "afterLogin.module.js",
-        parent: "afterLogin"
-    }, {
-        key: "beforeLogin",
-        parent: "spa"
-    }, {
-        key: "auth",
-        parent: "beforeLogin"
-    }, {
-        key: "authApp.module.js",
-        parent: "auth"
-    }, {
-        key: ".........",
-        parent: "auth"
-    }, {
-        key: "pricing",
-        parent: "beforeLogin"
-    }, {
-        key: "pricing.module.js",
-        parent: "pricing"
-    }, {
-        key: ".........",
-        parent: "pricing"
-    }, {
-        key: "beforeLogin.module.js",
-        parent: "beforeLogin"
-    }, {
-        key: "directives",
-        parent: "spa"
-    }, {
-        key: "ngEnter.js",
-        parent: "directives"
-    }, {
-        key: "starGroup.js",
-        parent: "directives"
-    }, {
-        key: "main",
-        parent: "spa"
-    }, {
-        key: "controllers",
-        parent: "main"
-    }, {
-        key: "appCtrl.js",
-        parent: "controllers"
-    }, {
-        key: "views",
-        parent: "main"
-    }, {
-        key: "index.html",
-        parent: "views"
-    }, {
-        key: "mainApp.js",
-        parent: "main"
-    }, {
-        key: "services",
-        parent: "spa"
-    }, {
-        key: "apiServices.js",
-        parent: "services"
-    }, {
-        key: "chatService.js",
-        parent: "services"
-    }, {
-        key: "app.js",
-        parent: "spa"
-    }, {
-        key: "appRun.js",
-        parent: "spa"
-    }, {
-        key: "appInterceptorFactory.js",
-        parent: "spa"
-    }, {
-        key: "vendors",
-        parent: "Scripts"
-    }, {
-        key: "common.js",
-        parent: "vendors"
-    }, {
-        key: "screenleap.js",
-        parent: "vendors"
-    }];
+    },{
+        key: "img",
+        parent: "assets"
+    },{
+        key: "images.png",
+        parent: "img"
+    },{
+        key: "data",
+        parent: "assets"
+    },{
+        key: "Quiz.json",
+        parent: "data"
+    },];
     myDiagram.model = new go.TreeModel(nodeDataArray);
 }
 
