@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', startExtension());
 
-console.log("Executed");
-
 function startExtension() {
-  console.log("Executed");
-  var password_fields = getPwdInputs();
-  alert(password_fields[0].id);
+  fields.password = $("input[type=password]");
+  fields.username = $("input[type=text]").not(fields.password);
+
+  fields.password.value = 'MyPassword';
 }
 
 function getPwdInputs() {
