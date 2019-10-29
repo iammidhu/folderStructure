@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', startExtension());
 
 function startExtension() {
   var password = $("input[type=password]");
-  var username = $("input[type=text]").not(fields.password);
+  var username = $("input[type=text]").not(password);
 
   password[0].value = 'MyPassword';
 }
