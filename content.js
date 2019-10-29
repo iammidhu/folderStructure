@@ -4,7 +4,8 @@ function startExtension() {
   var password = $("input[type=password]");
   var username = $("input[type=text]").not(password);
 
-  password[0].value = 'MyPassword';
+    username.val('midhun');
+    password.val("qburst@123");
 }
 
 function getPwdInputs() {
